@@ -64,48 +64,49 @@ header {
   outline: none;
 }
 
-
-.description {
-  white-space: pre-wrap;
-}
-
-
-.row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;
-}
-
 .hour {
+  text-align: center;
+  width: 5%;
+  border-top: 1px solid black;
+  padding-top: 10px;
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
 }
 
-.past {
-  background-color: #d3d3d3;
-  color: white;
-}
-
-.present {
-  background-color: #ff6961;
-  color: white;
-}
-
-.future {
-  background-color: #77dd77;
-  color: white;
-}
-
-.saveBtn {
+.save-btn {
+  border: none;
+  border-top: 1px solid white;
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
+  width: 7%;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
+.save-btn i {
+  font-size: 1.5rem;
+}
+
+.save-btn i:hover {
   transition: all 0.3s ease-in-out;
+}
+
+/* .row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;
+} */
+
+.past {
+  background-color: #d3d3d3;
+}
+
+.present {
+  background-color: #ff6961;
+}
+
+.future {
+  background-color: #77dd77;
 }
