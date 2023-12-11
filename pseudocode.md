@@ -1,4 +1,4 @@
-When user visits page, he sees day planner
+When user visits page, s/he sees day planner
 
 There must be a save button that alllows users to save events entered
 
@@ -20,7 +20,7 @@ WHEN USER OPENS THE CALENDAR
 when timeblock is viewed.
 6. User must be able to enter an event in the time block.
 7. User is able to save events entered in the time block when save button is clisked in the respective time bloks. (local storage)
-8. Persist events between refreshes of a page???????
+8. Persist events between refreshes of a page
 
 
 
