@@ -1,13 +1,15 @@
-// Function for loading the page
+// Function for loading the document page
 $(document).ready(() =>{
     // Target various id and class elements
     const currentDayElement = $('#currentDay')
     const currentTimeElement = $('#currentTime')
     const mainContainerElement = $('.main-container')
 
-    const todaysDate = ('dddd, MMMM D, YYYY')
+    // Display Current Date with Dayjs() format
+    const todaysDate = dayjs().format('dddd, MMMM D, YYYY')
     currentDayElement.text(todaysDate)
 
+    // Function for updating time
     function updateCurrentTime() {
         const time = dayjs().format('HH:mm:ss')
         currentTimeElement.text(time)
@@ -16,14 +18,17 @@ $(document).ready(() =>{
     setInterval(updateCurrentTime, 1000)
     updateCurrentTime()
 
-    const currentHour = Number(dayjs().format('H'))
+    //  Converting time from string to number
+    const currentHour = Number(dayjs().format('H')) 
 
     let timeBlocksHTML = ``;
 
-    // Write a for loop to iterate through the hours 9am-5pm
+    // for loop to iteration through the hours from 9am-5pm
     for(let hour = 9; hour <= 17; hour++) {
         let timePeriod = ''
 
+        // conditional statement for determining if a particular time period is in the 
+        // past, present or future
         if(hour < currentHour ) {
             timePeriod = 'past'
         } else if ( hour > currentHour) {
